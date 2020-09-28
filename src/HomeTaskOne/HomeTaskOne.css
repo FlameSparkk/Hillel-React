@@ -1,0 +1,21 @@
+.products-table {
+    text-align: center !important;
+}
+
+.table-container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.edit-ico {
+    margin-right: 20px !important;
+}
+
+.delete-ico,.edit-ico {
+    cursor: pointer;
+}
+
+.input-error-label {
+    display: block !important;
+}
