@@ -1,4 +1,4 @@
---This is the repository with my homeworks for React.js course in Hillel IT School--
+## This is the repository with my homeworks for React.js course in Hillel IT School 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
