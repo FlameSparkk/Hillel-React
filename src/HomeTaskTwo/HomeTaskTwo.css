@@ -1,0 +1,6 @@
+.splide-options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}

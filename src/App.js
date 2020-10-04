@@ -2,11 +2,12 @@ import React from 'react';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css'
 import HomeTaskOne from './HomeTaskOne/HomeTaskOne';
+import HomeTaskThree from './HomeTaskThree/HomeTaskThree';
+import HomeTaskTwo from './HomeTaskTwo/HomeTaskTwo';
 
-function App() {
+export default function App() {
   return (
-    <HomeTaskOne />
+    // <HomeTaskOne />
+    <HomeTaskTwo/>
   );
-}
-
-export default App;
+};
