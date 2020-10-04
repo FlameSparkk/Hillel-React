@@ -34,18 +34,42 @@ export default class Posts extends Component {
         <Loader size='small' active={isPostFetching} />
         <Feed>
             {posts.map(post => (
-                <Feed.Event key={post.id}>
-                    <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />
-                        <Feed.Content>
-                            <Feed.Summary className="post-title" onClick={() => this.handlePostClick(post)}>
-                            <a>{post.title}</a>
-                            </Feed.Summary>
-                            <PostContent postId={selectedPost} text/>
-                        </Feed.Content>
-                </Feed.Event>
+                <PostItem post={post} />
             ))}
         </Feed>
       </Fragment>
     );
   }
 };
+
+
+ const PostItem = ({ post, ...rest }) => {
+ const [isContentDisplayed, setIsContentDisplayed] = useState(false);=
+  
+
+const onPostClick = useCallback((post) => {
+  setIsContentDisplayed(!isContentDisplayed)
+   rest.onPostClick(post)
+
+}, [])
+
+return (
+
+<Feed.Event key={post.id}>
+  <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />
+      <Feed.Content>
+          <Feed.Summary className="post-title" onClick={onPostClick}>
+          <a>{post.title}</a>
+          </Feed.Summary>
+            {isContentDisplayed && <Feed.Extra text>
+                                {post.body}
+                            </Feed.Extra>
+            }
+           {isContentDisplayed && <CommentList postId={post.id} />}
+      </Feed.Content>
+</Feed.Event>
+
+
+)
+
+}
