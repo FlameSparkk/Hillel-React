@@ -27,7 +27,6 @@ export default function CommentList({postId}) {
 
     useEffect(() => {
         setIsFetching(true);
-        console.log(isFetching);
         fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
             .then(response => response.json())
             .then(comments => {
