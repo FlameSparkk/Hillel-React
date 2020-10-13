@@ -85,7 +85,7 @@ export default class AuthorInfo extends Component {
                             </Header>
                             <List bulleted>
                                 {albums.map(album => (
-                                    <List.Item hover  key={album.id}>{album.title}</List.Item>
+                                    <List.Item as="a" key={album.id}>{album.title}</List.Item>
                                 ))}
                             </List>
                         </Fragment>
