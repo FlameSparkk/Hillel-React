@@ -33,7 +33,6 @@ export default function CommentList({postId}) {
             .then(comments => {
                 setCommentList(comments)
                 setIsFetching(false);
-                console.log(isFetching);
             })
     }, []);
 
