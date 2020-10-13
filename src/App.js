@@ -4,11 +4,13 @@ import 'semantic-ui-css/semantic.min.css'
 import HomeTaskOne from './HomeTaskOne/HomeTaskOne';
 import HomeTaskThree from './HomeTaskThree/HomeTaskThree';
 import HomeTaskTwo from './HomeTaskTwo/HomeTaskTwo';
+import HomeTaskFour from './HomeTaskFour/HomeTaskFour';
 
 export default function App() {
   return (
     // <HomeTaskOne />
     // <HomeTaskTwo/>
-    <HomeTaskThree/>
+    // <HomeTaskThree/>
+    <HomeTaskFour/>
   );
 };
