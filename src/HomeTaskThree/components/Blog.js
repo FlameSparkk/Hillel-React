@@ -17,10 +17,10 @@ export default class Blog extends Component {
     const { selectedAuthorInfo } = this.state;
     return (
         <Grid className='blog'>
-            <Grid.Column width={6}>
+            <Grid.Column width={8}>
                 <Posts onPostSelect={this.handlePostSelection} />
             </Grid.Column>
-            <Grid.Column width={8} className='author-column'>
+            <Grid.Column width={6} className='author-column'>
                 <AuthorInfo authorId={selectedAuthorInfo} />
             </Grid.Column>
         </Grid>

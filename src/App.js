@@ -8,6 +8,7 @@ import HomeTaskTwo from './HomeTaskTwo/HomeTaskTwo';
 export default function App() {
   return (
     // <HomeTaskOne />
-    <HomeTaskTwo/>
+    // <HomeTaskTwo/>
+    <HomeTaskThree/>
   );
 };
