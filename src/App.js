@@ -6,6 +6,8 @@ import HomeTaskThree from './HomeTaskThree/HomeTaskThree';
 import HomeTaskTwo from './HomeTaskTwo/HomeTaskTwo';
 import HomeTaskFour from './HomeTaskFour/HomeTaskFour';
 import HomeTaskFive from './HomeTaskFive/HomeTaskFive';
+import HomeTaskSix from './HomeTaskSix/HomeTaskSix';
+import HomeTaskSeven from './HomeTaskSeven/HomeTaskSeven';
 
 export default function App() {
   return (
@@ -13,6 +15,8 @@ export default function App() {
     // <HomeTaskTwo/>
     // <HomeTaskThree/>
     // <HomeTaskFour/>
-    <HomeTaskFive/>
+    // <HomeTaskFive/>
+    // <HomeTaskSix/>
+    <HomeTaskSeven/>
   );
 };
